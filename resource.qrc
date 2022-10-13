@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/">
+        <file>qss/coffee.qss</file>
+        <file>pictures/icons8-email-100.ico</file>
+        <file>pictures/icons8-email-100.png</file>
+        <file>pictures/icons8-email-100.xcf</file>
+    </qresource>
+</RCC>
