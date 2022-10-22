@@ -4,5 +4,9 @@
         <file>pictures/icons8-email-100.ico</file>
         <file>pictures/icons8-email-100.png</file>
         <file>pictures/icons8-email-100.xcf</file>
+        <file>images/egge-downarrow.png</file>
+        <file>images/egge-downarrow.xcf</file>
+        <file>images/icon.png</file>
+        <file>images/icon.xcf</file>
     </qresource>
 </RCC>

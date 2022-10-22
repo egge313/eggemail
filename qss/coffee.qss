@@ -75,18 +75,19 @@ QProgressBar:horizontal {
 
 QProgressBar::chunk:horizontal {
 background: qlineargradient(x1: 0, y1: 0.5, x2: 1, y2: 0.5, stop: 0 #b9bfef, stop: 1 lightyellow);
-    padding: 4px;
+    padding: 3px;
     color: white;
     margin-right: 2px; /* space */
     border-radius: 3px;
-    width: 6px;	  
+    width: 5px;
 }
 
 /* Bold text on status bar looks awful. */
 QStatusBar QLabel {
    font: normal;
+   padding: 2px;
    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
-                stop: 0 cornsilk, stop:  0.5 #ebf1bd, stop: 1 #ccf4bb)
+                stop: 0 cornsilk, stop:  0.5 #ebf1bd, stop: 1 #ccf4bb);
 }
 
 QStatusBar::item {
@@ -94,6 +95,7 @@ QStatusBar::item {
     border-color: darkkhaki;
     border-style: solid;
     border-radius: 2;
+    padding: 2;
 }
 
 QListView {
@@ -249,7 +251,7 @@ QTabWidget {
 
 
 QComboBox {
-    border: 1px solid gray;
+    border: 2px solid lightgrey;
     border-radius: 5px;
     padding: 1px 18px 1px 3px;
     min-width: 6em;

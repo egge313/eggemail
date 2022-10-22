@@ -1,4 +1,4 @@
 #ifndef VERSION_H
-#define VERSION 0.0.1
+#define EGGEMAILVERSION "0.0.3"
 #define VERSION_H 1
 #endif

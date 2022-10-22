@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>812</width>
-    <height>708</height>
+    <height>758</height>
    </rect>
   </property>
   <property name="minimumSize">
@@ -33,9 +33,9 @@
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>350</y>
+      <y>481</y>
       <width>791</width>
-      <height>192</height>
+      <height>131</height>
      </rect>
     </property>
    </widget>
@@ -43,7 +43,7 @@
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>560</y>
+      <y>620</y>
       <width>791</width>
       <height>28</height>
      </rect>
@@ -58,118 +58,79 @@
       <x>10</x>
       <y>10</y>
       <width>411</width>
-      <height>151</height>
+      <height>231</height>
      </rect>
     </property>
     <property name="title">
      <string>My account</string>
     </property>
-    <widget class="QLabel" name="label">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>30</y>
-       <width>63</width>
-       <height>20</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>Email:</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label_2">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>110</y>
-       <width>101</width>
-       <height>20</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>Server address:</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label_3">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>70</y>
-       <width>63</width>
-       <height>20</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>Password:</string>
-     </property>
-    </widget>
-    <widget class="QLineEdit" name="lineEdit_Password">
-     <property name="geometry">
-      <rect>
-       <x>120</x>
-       <y>65</y>
-       <width>271</width>
-       <height>31</height>
-      </rect>
-     </property>
-     <property name="echoMode">
-      <enum>QLineEdit::Password</enum>
-     </property>
-    </widget>
-    <widget class="QLineEdit" name="lineEdit_ServerAddress">
-     <property name="geometry">
-      <rect>
-       <x>120</x>
-       <y>105</y>
-       <width>271</width>
-       <height>31</height>
-      </rect>
-     </property>
-    </widget>
-    <widget class="QComboBox" name="comboBoxEmail">
-     <property name="geometry">
-      <rect>
-       <x>120</x>
-       <y>25</y>
-       <width>271</width>
-       <height>31</height>
-      </rect>
-     </property>
-     <property name="mouseTracking">
-      <bool>true</bool>
-     </property>
-     <property name="editable">
-      <bool>true</bool>
-     </property>
-     <property name="placeholderText">
-      <string>(Insert email@somedomain.com)</string>
-     </property>
-    </widget>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="0" column="0">
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>Email:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QComboBox" name="comboBoxEmail">
+       <property name="mouseTracking">
+        <bool>true</bool>
+       </property>
+       <property name="editable">
+        <bool>true</bool>
+       </property>
+       <property name="placeholderText">
+        <string>(Insert email@somedomain.com)</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="label_3">
+       <property name="text">
+        <string>Password:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QLineEdit" name="lineEdit_Password">
+       <property name="echoMode">
+        <enum>QLineEdit::Password</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string>Server address:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QLineEdit" name="lineEdit_ServerAddress"/>
+     </item>
+     <item row="3" column="1">
+      <widget class="QPushButton" name="pushButtonSaveAccount">
+       <property name="text">
+        <string>Save</string>
+       </property>
+       <property name="checkable">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+    </layout>
    </widget>
    <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
       <x>400</x>
-      <y>610</y>
+      <y>660</y>
       <width>395</width>
       <height>35</height>
      </rect>
     </property>
     <layout class="QHBoxLayout" name="horizontalLayout">
-     <item>
-      <widget class="QPushButton" name="pushButton_4">
-       <property name="text">
-        <string>PushButton</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QPushButton" name="pushButton_3">
-       <property name="text">
-        <string>PushButton</string>
-       </property>
-      </widget>
-     </item>
      <item>
       <widget class="QPushButton" name="pushButton_Send">
        <property name="font">
@@ -184,6 +145,20 @@
        </property>
        <property name="text">
         <string>Send</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_4">
+       <property name="text">
+        <string>PushButton</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_3">
+       <property name="text">
+        <string>PushButton</string>
        </property>
       </widget>
      </item>
@@ -210,7 +185,7 @@
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>170</y>
+      <y>250</y>
       <width>411</width>
       <height>161</height>
      </rect>
@@ -247,6 +222,25 @@
       <string>To:</string>
      </property>
     </widget>
+   </widget>
+   <widget class="QLabel" name="label_5_info">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>430</y>
+      <width>791</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">

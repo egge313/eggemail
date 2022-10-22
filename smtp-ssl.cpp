@@ -31,9 +31,11 @@
 #include <string.h>
 #include <curl/curl.h>
 #include "mailer.h"
+#include "datetime.h"
 #include <QDateTime>
 #include <QDebug>
 #include <QString>
+#include <QByteArray>
 
 /* This is a simple example showing how to send mail using libcurl's SMTP
  * capabilities. It builds on the smtp-mail.c example to add authentication
@@ -73,6 +75,7 @@ static size_t payload_source(char *ptr, size_t size, size_t nmemb, void *userp)
   }
 
   // data = &payload_text[upload_ctx->bytes_read];
+  data = datetime().toLocal8Bit().data();
 
   if(data) {
     size_t len = strlen(data);

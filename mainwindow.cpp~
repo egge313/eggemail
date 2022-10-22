@@ -21,10 +21,6 @@ MainWindow::MainWindow(QWidget *parent)
                 5000);
 
     // Greet and tell version.
-    ui->label_5_info->setFrameStyle(QFrame::Panel | QFrame::Sunken);
-    QString info1("EggeMail version ");
-    QString info2(EGGEMAILVERSION);
-    ui->label_5_info->setText (info1 + info2);
 
     // Set style sheet.
     QString coffee_stylesheet ("coffee");
